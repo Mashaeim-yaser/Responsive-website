@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style-type:none;
+} 
+.active{
+    color:rgb(49, 5, 5);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+body , html{
+    overflow-x: hidden;
+}
+.nav-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-links{
+    display: flex;
+    align-items:center ;
+
+}
+.nav-links li{ 
+    margin: 0 30px;
+
+}
+.logo{
+    font-size: 60px;
+    text-decoration: underline;
+    color: rgb(7, 20, 58)
+}
+header{
+    background-image: url(./header.jpg);
+    height:100vh;
+    width: 100vw;
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom:150px;
+
+}
+.btn{
+    padding:8px 15px;
+    margin: 20px 20px;
+    background-color:rgb(49, 5, 5);
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius:30px;
+    justify-content: center;
+    text-align: center; 
+}
+.title{
+    text-align: center;
+    font-family: 40px;
+    color:black;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+.row1{
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content:space-around;
+}
+.row2{
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content:space-around;
+}
+.col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h4{
+    color: darkslategrey;
+    margin: 20px auto;
+    font-size:4vmin;
+}
+p{
+    color:dimgray;
+    padding:0px 40px;
+}
+.footer{
+    width:100%;
+    min-height:80px;
+    margin:0;
+    padding:20px 80px;
+    background-color: darkseagreen;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    padding: 20px auto;
+}
+@media screen and (max-width: 600px) {
+.row1{
+    flex-direction: column;
+} 
+
+.row2{
+    flex-direction: column;
+}
+.row1 col{
+    margin:20px auto;
+
+}
+.row1 col{
+    margin:20px auto;
+
+}
+.col img{
+    max-width:90%
+}
+}
+.footer{
+    padding: 10px;
+}
+/*annimations*/
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.btn:hover{
+    color:rgb(49, 5, 5);
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+}
+li:hover{
+    color:whitesmoke
+}
